@@ -33,3 +33,5 @@ The following scripts are available in the `package.json`:
 	```bash
 	npm install
 	```
+
+3. Run the development server:
