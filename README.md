@@ -22,3 +22,5 @@ The following scripts are available in the `package.json`:
 - **`start`**: Compiles the code and starts the server in production mode.
 
 ## Getting Started
+
+1. Clone the repository:
