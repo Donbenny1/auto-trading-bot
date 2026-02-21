@@ -17,3 +17,4 @@ The following scripts are available in the `package.json`:
 - **`server`**: Starts the server using the compiled code.
 - **`dev`**: Cleans the build directory, compiles the code, and starts the server in development mode.
 - **`prod`**: Starts the server in production mode.
+- **`clean`**: Removes the build directory.
