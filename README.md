@@ -8,3 +8,7 @@ This is a trading bot using Node.js, TypeScript, Telegraf, and MySQL.
 - RESTful API design for easy integration.
 - Scripts for development, production, and testing.
 
+## Available Scripts
+
+The following scripts are available in the `package.json`:
+
