@@ -35,3 +35,4 @@ The following scripts are available in the `package.json`:
 	```
 
 3. Run the development server:
+	```bash
