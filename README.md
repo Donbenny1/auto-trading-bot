@@ -24,3 +24,4 @@ The following scripts are available in the `package.json`:
 ## Getting Started
 
 1. Clone the repository:
+	```bash
