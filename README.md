@@ -38,3 +38,5 @@ The following scripts are available in the `package.json`:
 	```bash
 	npm run dev
 	```
+
+4. Build and start the production server:
