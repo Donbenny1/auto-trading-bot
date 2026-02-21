@@ -40,3 +40,4 @@ The following scripts are available in the `package.json`:
 	```
 
 4. Build and start the production server:
+	```bash
