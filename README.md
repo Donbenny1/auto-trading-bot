@@ -30,3 +30,4 @@ The following scripts are available in the `package.json`:
 	```
 
 2. Install dependencies:
+	```bash
