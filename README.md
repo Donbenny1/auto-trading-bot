@@ -20,3 +20,5 @@ The following scripts are available in the `package.json`:
 - **`clean`**: Removes the build directory.
 - **`watch:dev`**: Watches for file changes and restarts the server during development.
 - **`start`**: Compiles the code and starts the server in production mode.
+
+## Getting Started
