@@ -27,3 +27,4 @@ The following scripts are available in the `package.json`:
 	```bash
 	git clone https://github.com/Donbenny1/auto-trading-bot.git
 	cd ndc-api
+	```
