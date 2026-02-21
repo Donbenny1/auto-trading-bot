@@ -25,3 +25,4 @@ The following scripts are available in the `package.json`:
 
 1. Clone the repository:
 	```bash
+	git clone https://github.com/Donbenny1/auto-trading-bot.git
