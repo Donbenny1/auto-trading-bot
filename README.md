@@ -18,3 +18,4 @@ The following scripts are available in the `package.json`:
 - **`dev`**: Cleans the build directory, compiles the code, and starts the server in development mode.
 - **`prod`**: Starts the server in production mode.
 - **`clean`**: Removes the build directory.
+- **`watch:dev`**: Watches for file changes and restarts the server during development.
