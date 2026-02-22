@@ -13,7 +13,7 @@ This is a trading bot using Node.js, TypeScript, Telegraf, and MySQL.
 The following scripts are available in the `package.json`:
 
 - **`test`**: Placeholder for running tests...
-- **`build`**: Compiles the TypeScript code into JavaScript.
+- **`build`**: Compiles the TypeScript code into JavaScript...
 - **`server`**: Starts the server using the compiled code.
 - **`dev`**: Cleans the build directory, compiles the code, and starts the server in development mode.
 - **`prod`**: Starts the server in production mode.
