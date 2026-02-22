@@ -15,7 +15,7 @@ The following scripts are available in the `package.json`:
 - **`test`**: Placeholder for running tests
 - **`build`**: Compiles the TypeScript code into JavaScript
 - **`server`**: Starts the server using the compiled code
-- **`dev`**: Cleans the build directory, compiles the code, and starts the server in development mode.
+- **`dev`**: Cleans the build directory, compiles the code, and starts the server in development mode
 - **`prod`**: Starts the server in production mode.
 - **`clean`**: Removes the build directory.
 - **`watch:dev`**: Watches for file changes and restarts the server during development.
