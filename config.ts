@@ -56,4 +56,14 @@ export function calculateTrendScore(pair: any): number {
 	else if (sellTxns > buyTxns) score -= 10; // Slightly more sells = risky
 	else if (buyTxns > sellTxns * 2) score += 20; // Strong buy pressure = good signal
 
+	// 📊 6. Price Change Momentum (Analyzing trends)
+	const priceChanges = [
+		pair.priceChange?.m5 || 0,
+		pair.priceChange?.h1 || 0,
+		pair.priceChange?.h6 || 0,
+		pair.priceChange?.h24 || 0
+	];
+	const avgPriceChange = priceChanges.reduce((sum, val) => sum + val, 0) / priceChanges.length;
+
+	
 };
