@@ -43,5 +43,7 @@ export function calculateTrendScore(pair: any): number {
 	else if (volume24h >= 500000) score += 20;
 	else if (volume24h >= 100000) score += 10;
 
+	// 🚀 4. Market Cap Score (Low market caps have more room to grow)
+	if (marketCap < 3000000) score += 20; // Extreme low cap = 🚀🚀
 	
 };
