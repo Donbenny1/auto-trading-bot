@@ -11,3 +11,5 @@ export const timestamp_str_alt = (date: string | number) => {
 	const time_ = (d.getHours() < 10 ? "0" + d.getHours() : d.getHours()) + ":" + (d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()) + ":" + (d.getSeconds() < 10 ? "0" + d.getSeconds() : d.getSeconds());
 	return date_ + " " + time_;
 };
+
+export const hypeKeywords = ["AI"];
