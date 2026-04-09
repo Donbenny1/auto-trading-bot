@@ -50,5 +50,7 @@ export function calculateTrendScore(pair: any): number {
 
 	// ⚠️ 5. Sell vs Buy Pressure (Avoid dump-heavy tokens)
 	const buyTxns = (pair.txns?.m5?.buys || 0) + (pair.txns?.h1?.buys || 0) + (pair.txns?.h6?.buys || 0) + (pair.txns?.h24?.buys || 0);
+	const sellTxns = (pair.txns?.m5?.sells || 0) + (pair.txns?.h1?.sells || 0) + (pair.txns?.h6?.sells || 0) + (pair.txns?.h24?.sells || 0);
+
 	
 };
