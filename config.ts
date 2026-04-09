@@ -48,5 +48,7 @@ export function calculateTrendScore(pair: any): number {
 	else if (marketCap < 10000000) score += 10;
 	else score += 5;
 
+	// ⚠️ 5. Sell vs Buy Pressure (Avoid dump-heavy tokens)
+	const buyTxns = (pair.txns?.m5?.buys || 0) + (pair.txns?.h1?.buys || 0) + (pair.txns?.h6?.buys || 0) + (pair.txns?.h24?.buys || 0);
 	
 };
