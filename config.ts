@@ -32,4 +32,7 @@ export function calculateTrendScore(pair: any): number {
 		else if (ageInHours < 24) score += 10;
 	}
 
+	// 💰 2. Liquidity Score (Too little = unsafe, too much = slow growth)
+	if (liquidity >= 500000) score += 15;
+	
 };
