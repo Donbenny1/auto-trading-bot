@@ -52,5 +52,8 @@ export function calculateTrendScore(pair: any): number {
 	const buyTxns = (pair.txns?.m5?.buys || 0) + (pair.txns?.h1?.buys || 0) + (pair.txns?.h6?.buys || 0) + (pair.txns?.h24?.buys || 0);
 	const sellTxns = (pair.txns?.m5?.sells || 0) + (pair.txns?.h1?.sells || 0) + (pair.txns?.h6?.sells || 0) + (pair.txns?.h24?.sells || 0);
 
-	
+	if (sellTxns > buyTxns * 2) score -= 20; // More sells than buys = avoid 🚩
+	else if (sellTxns > buyTxns) score -= 10; // Slightly more sells = risky
+	else if (buyTxns > sellTxns * 2) score += 20; // Strong buy pressure = good signal
+
 };
