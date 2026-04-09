@@ -24,5 +24,12 @@ export function calculateTrendScore(pair: any): number {
 	const volume24h = pair.volume?.h24 || 0;
 	const marketCap = pair.marketCap || 0;
 
-	
+	// 🕵️‍♂️ 1. Newly Created Pairs (Brand new tokens have high potential)
+	if (pair.pairCreatedAt) {
+		const ageInHours = (now - pair.pairCreatedAt) / (1000 * 60 * 60); // Convert ms to hours
+		if (ageInHours < 6) score += 30; // Fresh launch = Highest potential
+		else if (ageInHours < 12) score += 20;
+		else if (ageInHours < 24) score += 10;
+	}
+
 };
