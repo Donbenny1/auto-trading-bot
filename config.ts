@@ -45,5 +45,6 @@ export function calculateTrendScore(pair: any): number {
 
 	// 🚀 4. Market Cap Score (Low market caps have more room to grow)
 	if (marketCap < 3000000) score += 20; // Extreme low cap = 🚀🚀
+	else if (marketCap < 10000000) score += 10;
 	
 };
