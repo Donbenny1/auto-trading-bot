@@ -40,5 +40,6 @@ export function calculateTrendScore(pair: any): number {
 
 	// 📈 3. Volume Score (Strong trading activity = real interest)
 	if (volume24h >= 1000000) score += 25;
+	else if (volume24h >= 500000) score += 20;
 	
 };
