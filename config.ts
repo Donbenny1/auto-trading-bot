@@ -70,5 +70,8 @@ export function calculateTrendScore(pair: any): number {
 	else if (avgPriceChange > 10) score += 10;
 	else if (avgPriceChange < -20) score -= 20; // Extreme dump = avoid 🚩
 
-	
+	// 🚀 7. Hype Keywords (Trending narratives like AI, Meme, etc.)
+	const hypeKeywords = ["AI", "Tiktok", "Meme", "Bonk", "Shiba", "Doge", "Community", "100x", "Moon", "Pump"];
+	const tokenName = pair.baseToken.name.toLowerCase();
+
 };
