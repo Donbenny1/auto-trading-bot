@@ -12,4 +12,4 @@ export const timestamp_str_alt = (date: string | number) => {
 	return date_ + " " + time_;
 };
 
-export const hypeKeywords = ["AI", "Tiktok", "Meme", "Bonk", "Shiba", "Doge", "Community", "100x"];
+export const hypeKeywords = ["AI", "Tiktok", "Meme", "Bonk", "Shiba", "Doge", "Community", "100x", "Moon"];
