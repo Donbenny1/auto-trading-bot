@@ -36,5 +36,7 @@ export function calculateTrendScore(pair: any): number {
 	if (liquidity >= 500000) score += 15;
 	else if (liquidity >= 200000) score += 10;
 	else if (liquidity >= 50000) score += 5;
+	else score -= 10; // Very low liquidity = risky
+
 	
 };
