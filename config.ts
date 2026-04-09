@@ -65,5 +65,10 @@ export function calculateTrendScore(pair: any): number {
 	];
 	const avgPriceChange = priceChanges.reduce((sum, val) => sum + val, 0) / priceChanges.length;
 
+	if (avgPriceChange > 50) score += 25; // Bullish spike 🚀
+	else if (avgPriceChange > 20) score += 15;
+	else if (avgPriceChange > 10) score += 10;
+	else if (avgPriceChange < -20) score -= 20; // Extreme dump = avoid 🚩
+
 	
 };
