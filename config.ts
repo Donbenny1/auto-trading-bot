@@ -19,4 +19,7 @@ export function calculateTrendScore(pair: any): number {
 	let score = 0;
 	const now = Date.now(); // Get current timestamp in milliseconds
 
+	// Default values to avoid undefined errors
+	const liquidity = pair.liquidity?.usd || 0;
+	
 };
