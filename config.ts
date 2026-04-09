@@ -21,5 +21,6 @@ export function calculateTrendScore(pair: any): number {
 
 	// Default values to avoid undefined errors
 	const liquidity = pair.liquidity?.usd || 0;
+	const volume24h = pair.volume?.h24 || 0;
 	
 };
