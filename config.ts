@@ -74,4 +74,10 @@ export function calculateTrendScore(pair: any): number {
 	const hypeKeywords = ["AI", "Tiktok", "Meme", "Bonk", "Shiba", "Doge", "Community", "100x", "Moon", "Pump"];
 	const tokenName = pair.baseToken.name.toLowerCase();
 
+	if (hypeKeywords.some((word) => tokenName.includes(word.toLowerCase()))) {
+		score += 15; // High hype = More potential 🚀
+	}
+
+	// Normalize score between 0-100
+	return Math.min(Math.max(score, 0), 100);
 };
