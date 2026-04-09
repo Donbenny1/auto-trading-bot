@@ -13,3 +13,5 @@ export const timestamp_str_alt = (date: string | number) => {
 };
 
 export const hypeKeywords = ["AI", "Tiktok", "Meme", "Bonk", "Shiba", "Doge", "Community", "100x", "Moon", "Pump"];
+export const searchWords = hypeKeywords.toString().toLowerCase().replace(",", "%20");
+
