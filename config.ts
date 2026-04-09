@@ -38,5 +38,7 @@ export function calculateTrendScore(pair: any): number {
 	else if (liquidity >= 50000) score += 5;
 	else score -= 10; // Very low liquidity = risky
 
+	// 📈 3. Volume Score (Strong trading activity = real interest)
+	if (volume24h >= 1000000) score += 25;
 	
 };
