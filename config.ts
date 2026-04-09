@@ -81,3 +81,10 @@ export function calculateTrendScore(pair: any): number {
 	// Normalize score between 0-100
 	return Math.min(Math.max(score, 0), 100);
 };
+
+// Escape MarkdownV2 Text Automatically
+export function escapeMarkdownV2(text: string): string {
+	return text.replace(/[_[\]()~`>#+\-=|{}.!]/g, "\\$&");
+	// return text.replace(/[_*[\]()~`>#+\-=|{}.!]/g, "\\$&"); // Main one
+	// return text.replace(/[.]+/g, "\\$&");
+}
